@@ -20,7 +20,8 @@ struct GameEndPopUp: View {
                     
                     Text("Félicitations")
                         .font(Font.custom("Revalia", size: 39))
-                        .shadow(color: /*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/, radius: 7, x: 3, y: 3)
+                        .foregroundColor(.white)
+                        .shadow(color: /*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/, radius: 8, x: 4, y: 4)
                     Spacer()
                     
                     Image("trophy")
@@ -33,11 +34,12 @@ struct GameEndPopUp: View {
                     HStack{
                         Text("Tu a gagné \(game.nbEtoile)")
                             .font(Font.custom("Revalia",size:35))
+                            .foregroundColor(.white)
                         Image("ptsEtoile")
                             .resizable()
                             .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
                             .frame(width: 50, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    }.shadow(color: /*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/, radius: 7, x: 3, y: 3)
+                    }.shadow(color: /*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/, radius: 8, x: 4, y: 4)
                     
                     Spacer()
                     
@@ -49,7 +51,7 @@ struct GameEndPopUp: View {
                             .padding(.horizontal,70)
                             .background(Color("violet"))
                             .cornerRadius(35)
-                    }.shadow(color: /*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/, radius: 7, x: 3, y: 3)
+                    }.shadow(color: /*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/, radius: 8, x: 4, y: 4)
                     Spacer()
                 }.padding(15)
                 
@@ -63,7 +65,8 @@ struct GameEndPopUp: View {
                     
                     Text("Courage !")
                         .font(Font.custom("Revalia", size: 39))
-                        .shadow(color: /*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/, radius: 7, x: 3, y: 3)
+                        .foregroundColor(.white)
+                        .shadow(color: /*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/, radius: 8, x: 4, y: 4)
                     Spacer()
                     
                     Image("trophy")
@@ -71,12 +74,15 @@ struct GameEndPopUp: View {
                         .aspectRatio(contentMode: .fit)
                         .frame(maxWidth:.infinity)
                         .padding(.horizontal,50)
+                        .rotation3DEffect(Angle(degrees: 160), axis: (x:90,y:30,z:25))
+                        
                     Spacer()
                     
                     HStack{
                         Text("Tu y es presque")
                             .font(Font.custom("Revalia",size:35))
-                    }.shadow(color: /*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/, radius: 7, x: 3, y: 3)
+                            .foregroundColor(.white)
+                    }.shadow(color: /*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/, radius: 8, x: 4, y: 4)
                     
                     Spacer()
                     
@@ -88,7 +94,7 @@ struct GameEndPopUp: View {
                             .padding(.horizontal,70)
                             .background(Color("violet"))
                             .cornerRadius(35)
-                    }.shadow(color: /*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/, radius: 7, x: 3, y: 3)
+                    }.shadow(color: /*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/, radius: 8, x: 4, y: 4)
                     Spacer()
                 }.padding(15)
                     
