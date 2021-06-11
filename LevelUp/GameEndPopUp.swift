@@ -20,7 +20,7 @@ struct GameEndPopUp: View {
                     
                     Text("Félicitations")
                         .font(Font.custom("Revalia", size: 39))
-                        .shadow(color: /*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/, radius: 9, x: 10, y: 10)
+                        .shadow(color: /*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/, radius: 7, x: 3, y: 3)
                     Spacer()
                     
                     Image("trophy")
@@ -37,7 +37,7 @@ struct GameEndPopUp: View {
                             .resizable()
                             .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
                             .frame(width: 50, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    }.shadow(color: /*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/, radius: 9, x: 10, y: 10)
+                    }.shadow(color: /*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/, radius: 7, x: 3, y: 3)
                     
                     Spacer()
                     
@@ -49,7 +49,7 @@ struct GameEndPopUp: View {
                             .padding(.horizontal,70)
                             .background(Color("violet"))
                             .cornerRadius(35)
-                    }.shadow(color: /*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/, radius: 9, x: 10, y: 10)
+                    }.shadow(color: /*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/, radius: 7, x: 3, y: 3)
                     Spacer()
                 }.padding(15)
                 
@@ -61,9 +61,9 @@ struct GameEndPopUp: View {
                     
                     Spacer()
                     
-                    Text("Félicitations")
+                    Text("Courage !")
                         .font(Font.custom("Revalia", size: 39))
-                        .shadow(color: /*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/, radius: 9, x: 10, y: 10)
+                        .shadow(color: /*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/, radius: 7, x: 3, y: 3)
                     Spacer()
                     
                     Image("trophy")
@@ -73,7 +73,25 @@ struct GameEndPopUp: View {
                         .padding(.horizontal,50)
                     Spacer()
                     
+                    HStack{
+                        Text("Tu y es presque")
+                            .font(Font.custom("Revalia",size:35))
+                    }.shadow(color: /*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/, radius: 7, x: 3, y: 3)
+                    
+                    Spacer()
+                    
+                    Button(){}label:{
+                        Text("C'est reparti !")
+                            .font(Font.custom("Revalia", size: 25))
+                            .foregroundColor(.white)
+                            .padding(.vertical,15)
+                            .padding(.horizontal,70)
+                            .background(Color("violet"))
+                            .cornerRadius(35)
+                    }.shadow(color: /*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/, radius: 7, x: 3, y: 3)
+                    Spacer()
                 }.padding(15)
+                    
             }
         }
     }
