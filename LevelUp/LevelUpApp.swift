@@ -11,7 +11,7 @@ import SwiftUI
 struct LevelUpApp: App {
     var body: some Scene {
         WindowGroup {
-            GameEndPopUp(player: PLAYER2, game: GAME2)
+            ContentView()
         }
     }
 }

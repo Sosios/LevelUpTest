@@ -13,14 +13,16 @@ struct BackgroundRectangle: View {
         ZStack {
             RoundedRectangle(cornerRadius: 25)
                 .foregroundColor(Color(color))
-        RoundedRectangle(cornerRadius: 25)
-            .strokeBorder(Color("orPopUp"),lineWidth: 10)
-    }
+                .opacity(0.7)
+                .blur(radius: 5)
+            RoundedRectangle(cornerRadius: 25)
+                .stroke(Color("orPopUp"),lineWidth: 12)
+        }
     }
 }
 
 struct BackgroundRectangle_Previews: PreviewProvider {
     static var previews: some View {
-        BackgroundRectangle(color: "vert")
+        BackgroundRectangle(color: "vertop70")
     }
 }

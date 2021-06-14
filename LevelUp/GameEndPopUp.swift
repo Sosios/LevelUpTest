@@ -13,7 +13,7 @@ struct GameEndPopUp: View {
     var body: some View {
         if player.achievedGame.contains(game){
             ZStack{
-                BackgroundRectangle(color: "vert")
+                BackgroundRectangle(color: "vertop70")
                 VStack{
                     
                     Spacer()
@@ -58,7 +58,7 @@ struct GameEndPopUp: View {
             }
         }else{
             ZStack{
-                BackgroundRectangle(color:"rouge")
+                BackgroundRectangle(color:"rougeop70")
                 VStack{
                     
                     Spacer()
@@ -74,7 +74,7 @@ struct GameEndPopUp: View {
                         .aspectRatio(contentMode: .fit)
                         .frame(maxWidth:.infinity)
                         .padding(.horizontal,50)
-                        .rotation3DEffect(Angle(degrees: 160), axis: (x:90,y:30,z:25))
+                        .rotationEffect(Angle(degrees: 200))
                         
                     Spacer()
                     
